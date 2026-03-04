@@ -1,5 +1,5 @@
 {
-  "name": "relens",
+  "name": "@relensdev/relens",
   "version": "0.2.0",
   "type": "module",
   "description": "React performance telemetry for AI agents — find, understand, fix, and verify optimizations",
@@ -33,6 +33,9 @@
   },
   "files": [
     "dist",
+    "src/*.ts",
+    "src/*.tsx",
+    "src/fiber-walker",
     "README.md",
     "LICENSE"
   ],
