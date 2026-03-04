@@ -1,13 +1,13 @@
-# relens
+# @relensdev/relens
 
 React performance telemetry for AI agents. Find, understand, fix, and verify optimizations — powered by runtime data, not guesswork.
 
 ## Install
 
 ```sh
-npm install relens
+npm install @relensdev/relens
 # or
-yarn add relens
+yarn add @relensdev/relens
 ```
 
 ## Quick Start
@@ -15,7 +15,7 @@ yarn add relens
 Wrap your app in `<RelensProvider>`:
 
 ```tsx
-import { RelensProvider } from 'relens';
+import { RelensProvider } from '@relensdev/relens';
 
 function App() {
   return (
@@ -90,7 +90,7 @@ See the [setup guide](https://relens.dev/setup) for full instructions.
 
 ```ts
 // Component
-import { RelensProvider } from 'relens';
+import { RelensProvider } from '@relensdev/relens';
 
 // Types
 import type {
@@ -103,10 +103,10 @@ import type {
   RelensConfig,
   RelensProviderProps,
   RenderCause,
-} from 'relens';
+} from '@relensdev/relens';
 
 // Version
-import { VERSION } from 'relens';
+import { VERSION } from '@relensdev/relens';
 ```
 
 ## Requirements
