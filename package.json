@@ -1,0 +1,61 @@
+{
+  "name": "relens",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "React performance telemetry for AI agents — find, understand, fix, and verify optimizations",
+  "license": "MIT",
+  "author": "Relens <hello@relens.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/relensdev/relens.git"
+  },
+  "homepage": "https://relens.dev",
+  "keywords": [
+    "react",
+    "performance",
+    "profiler",
+    "devtools",
+    "mcp",
+    "ai",
+    "react-profiler",
+    "optimization",
+    "re-render",
+    "telemetry"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prebuild": "node scripts/generate-version.cjs && rm -rf dist",
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "yarn build && yarn test"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.2.3",
+    "jsdom": "^28.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.18"
+  }
+}
