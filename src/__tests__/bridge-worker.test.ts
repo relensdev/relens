@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { WORKER_SOURCE } from '../worker-source.js';
 import { createBridgeWorker } from '../bridge-worker.js';
 import type { RenderEntry, NetworkEntry, UserEventEntry } from '../types.js';

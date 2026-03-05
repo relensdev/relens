@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { walkFiberTree, resolveFiberToDOM, extractEffects, detectStateChange, isCompilerOptimized, extractSourceLocation, parseSourceFromStack } from '../fiber-walker/index.js';
 import { getComponentName, detectChangedProps, sumChildComponentDurations } from '../fiber-walker/props-diff.js';
-import { PROFILER_TAG, FUNCTION_COMPONENT, CLASS_COMPONENT, SIMPLE_MEMO_COMPONENT, MEMO_COMPONENT, FORWARD_REF, MAX_FIBERS, MAX_CHILD_HOPS, PERFORMED_WORK } from '../fiber-walker/types.js';
+import { PROFILER_TAG, FUNCTION_COMPONENT, SIMPLE_MEMO_COMPONENT, MEMO_COMPONENT, FORWARD_REF, MAX_FIBERS, MAX_CHILD_HOPS, PERFORMED_WORK } from '../fiber-walker/types.js';
 import type { FiberNode } from '../fiber-walker/types.js';
 
 describe('walkFiberTree', () => {

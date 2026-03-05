@@ -286,7 +286,7 @@ export function installNetworkInterceptor(
  *
  * @param profileId - The provider's profileId (kept for API compatibility).
  */
-export function uninstallNetworkInterceptor(profileId: string): void {
+export function uninstallNetworkInterceptor(_profileId: string): void {
   activeCount = Math.max(0, activeCount - 1);
 
   if (activeCount > 0) return; // other providers still active

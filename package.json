@@ -43,6 +43,7 @@
   "scripts": {
     "prebuild": "node scripts/generate-version.cjs && rm -rf dist",
     "build": "tsc",
+    "lint": "eslint src/",
     "test": "vitest run",
     "prepublishOnly": "yarn build && yarn test"
   },
@@ -55,10 +56,14 @@
     "@testing-library/react": "^16.3.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.2.3",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "jsdom": "^28.0.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "typescript": "^5.7.0",
+    "typescript-eslint": "^8.56.1",
     "vitest": "^4.0.18"
   }
 }

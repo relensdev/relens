@@ -3,7 +3,7 @@ import type { UserEventEntry } from './types.js';
 type UserEventCallback = (entry: UserEventEntry) => void;
 
 let activeCallback: UserEventCallback | null = null;
-let scrollTimers: Map<string, ReturnType<typeof setTimeout>> = new Map();
+const scrollTimers: Map<string, ReturnType<typeof setTimeout>> = new Map();
 let installedListeners: Array<[string, (e: Event) => void]> = [];
 
 /**
@@ -261,7 +261,7 @@ export function installUserEventCapture(profileId: string, callback: UserEventCa
  *
  * @param profileId - The provider's profileId (kept for API compatibility).
  */
-export function uninstallUserEventCapture(profileId: string): void {
+export function uninstallUserEventCapture(_profileId: string): void {
   activeCount = Math.max(0, activeCount - 1);
 
   if (activeCount > 0) return; // other providers still active

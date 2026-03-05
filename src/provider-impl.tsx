@@ -193,6 +193,7 @@ export function RelensProviderImpl({
           `use the same instanceId. Data will route to "${instanceId}".`,
         );
       }
+      // eslint-disable-next-line react-hooks/immutability -- intentional idempotent global for extension bridge
       window.__RELENS__.instanceId = instanceId;
     }
   }
